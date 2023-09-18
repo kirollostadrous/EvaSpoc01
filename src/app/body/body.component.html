@@ -1,0 +1,20 @@
+<div [ngSwitch]="id">
+  <div *ngSwitchCase="1">
+    <app-listing></app-listing>
+  </div>
+  <div *ngSwitchCase="2">
+    <app-products></app-products>
+  </div>
+  <div *ngSwitchCase="3">
+    <app-med-rep></app-med-rep>
+  </div>
+  <div *ngSwitchCase="4">
+    <app-pharmacy></app-pharmacy>
+  </div>
+  <div *ngSwitchCase="5">
+    <app-distributor></app-distributor>
+  </div>
+  <div *ngSwitchDefault>
+    <app-dashboard></app-dashboard>
+  </div>
+</div>

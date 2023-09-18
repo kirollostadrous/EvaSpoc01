@@ -1,0 +1,34 @@
+<body>
+  <div class="overlay">
+    <form>
+      <div class="con">
+        <header class="head-form">
+          <h2>Log In</h2>
+          <p>login here using your username and password</p>
+        </header>
+        <br />
+        <div style="text-align: center" class="field-set">
+          <input
+            class="form-input"
+            id="userName"
+            type="text"
+            placeholder="@UserName"
+            name="userName"
+            required
+          />
+          <br />
+          <input
+            class="form-input"
+            type="password"
+            placeholder="Password"
+            id="password"
+            name="password"
+            required
+          /><i class="bi bi-eye-slash" id="toggle-password"></i>
+          <br />
+          <button class="log-in" (click)="onSubmit()">Log In</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>

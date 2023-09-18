@@ -1,0 +1,108 @@
+form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 2%;
+  font-family: "Abel", sans-serif;
+  opacity: 0.95;
+
+  /* Center the form horizontally and vertically */
+  position: absolute;
+  top: 0px;
+  left: 168px;
+}
+.content {
+  display: flex;
+  margin: 83px auto 32px;
+  padding: 0 16px;
+  max-width: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: orange;
+  color: rgb(0, 0, 0);
+  border: 1px solid orange;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+button {
+  background-color: #2c2966;
+  border: 1px solid #2c2966;
+  color: white;
+}
+span.text-danger {
+  font-size: 0.8em;
+  color: red;
+}
+
+.form-control {
+  /* Other CSS code... */
+  /* Add dropdown list icon */
+  &::-ms-expand {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.25rem;
+    color: #212529;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "FontAwesome";
+    /* Font Awesome icon code */
+    content: "\f0d7";
+  }
+}
+
+.form-control option {
+  &[value=""][disabled] {
+    color: #ccc;
+  }
+}
+.form-control {
+  /* Other CSS code... */
+  /* Add dropdown list icon */
+  &::-ms-expand {
+    display: none;
+  }
+  label[for="medrepId"] {
+    font-weight: bold;
+  }
+  option:after {
+    content: "\f0d7";
+    font-family: "FontAwesome";
+    font-size: 1rem;
+    color: #212529;
+    position: absolute;
+    right: 0;
+  }
+}
+.form-group {
+  /* Other CSS code... */
+  /* Bold label font */
+  label {
+    font-weight: bold;
+  }
+
+  /* Use different font for label */
+  label {
+    font-family: "Times New Roman";
+  }
+}
+.form-group {
+  /* Other CSS code... */
+  /* Bold label font */
+  label {
+    font-weight: bold;
+  }
+
+  /* Use different font for label */
+  label {
+    font-family: "Times New Roman";
+  }
+}

@@ -1,0 +1,337 @@
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-image: url("data:image/jpeg;base64,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");
+    background-position: center;
+    background-size: 1400px 1400px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #343c72;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    position: absolute;
+    top: 20;
+    right: 150;
+    display: flex;
+    margin: 83px auto 32px;
+    padding: 0 16px;
+    max-width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card svg.material-icons path {
+    fill: #888;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card {
+    all: unset;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small {
+    height: 16px;
+    width: 168px;
+  }
+
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  .card-container .card:not(.highlight-card):hover .material-icons path {
+    fill: rgb(105, 103, 103);
+  }
+
+  .card.highlight-card {
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: auto;
+    min-width: 30%;
+    position: relative;
+  }
+
+  .card.card.highlight-card span {
+    margin-left: 60px;
+  }
+
+  svg#rocket {
+    width: 80px;
+    position: absolute;
+    left: -10px;
+    top: -24px;
+  }
+
+  svg#rocket-smoke {
+    height: calc(100vh - 95px);
+    position: absolute;
+    top: 10px;
+    right: 180px;
+    z-index: -10;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
+
+  .terminal {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 6px;
+    padding-top: 45px;
+    margin-top: 8px;
+    overflow: hidden;
+    background-color: rgb(15, 15, 16);
+  }
+
+  .terminal::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+  }
+
+  .terminal pre {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    color: white;
+    padding: 0 1rem 1rem;
+    margin: 0;
+  }
+
+  .circle-link {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin: 8px;
+    background-color: rgb(133, 87, 87);
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 1s ease-out;
+  }
+
+  .circle-link:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+
+  .github-star-badge {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+    margin-left: 4px;
+    font-weight: 600;
+  }
+
+  .github-star-badge:hover {
+    background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+    border-color: rgba(27, 31, 35, 0.35);
+    background-position: -0.5em;
+  }
+
+  .github-star-badge .material-icons {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .card-container > *:not(.circle-link),
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <a href="" onclick="return false;">
+    <img src="https://thumbs2.imgbox.com/e4/af/GccEyx2F_t.png" alt="image host"
+  /></a>
+
+  <a
+    aria-label="Eva on YouTube"
+    target="_blank"
+    rel="noopener"
+    href="https://www.youtube.com/@EvaPharma"
+    title="YouTube"
+  >
+    <svg
+      id="youtube-logo"
+      height="24"
+      width="24"
+      data-name="Logo"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="#fff"
+    >
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path
+        d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"
+      />
+    </svg>
+  </a>
+</div>
+
+<div class="content" role="main">
+  <router-outlet></router-outlet>
+</div>

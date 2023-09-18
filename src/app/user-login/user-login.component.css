@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+
+form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 2%;
+  background-image: linear-gradient(-225deg, #6cbfc7 50%, #437493 50%);
+  font-family: "Abel", sans-serif;
+  opacity: 0.95;
+
+  /* Center the form horizontally and vertically */
+  position: absolute;
+  top: 50px;
+  left: 545px;
+}
+
+form .con {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+header {
+  margin: 2% auto 10% auto;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 250%;
+  font-family: "Playfair Display", serif;
+  color: #3e403f;
+}
+
+header p {
+  letter-spacing: 0.05em;
+}
+
+.input-item {
+  background: #fff;
+  color: #333;
+  padding: 14.5px 0px 15px 9px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+input[class="form-input"] {
+  width: 240px;
+  height: 50px;
+  margin-top: 2%;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+  color: #5e6472;
+  outline: none;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  transition: 0.2s linear;
+}
+
+input[id="txt-input"] {
+  width: 250px;
+}
+
+input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+  color: #252537;
+  width: 280px;
+  height: 50px;
+  padding: 0 20px;
+  background: #ffbc26;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+}
+
+.bi-eye-slash {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.submits {
+  color: #252537;
+  width: 48%;
+  display: inline-block;
+  float: center;
+  margin-left: 20%;
+}
+
+.frgt-pass {
+  background: transparent;
+  color: #ffe6fa;
+  text-align: center;
+}
+
+.sign-up {
+  background: #b8f2e6;
+}
+
+button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+
+button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
